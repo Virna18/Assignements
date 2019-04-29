@@ -1,0 +1,17 @@
+--------------------------------------------------
+* Inschrijfnummer
+naam
+adres
+postcode
+plaats
+telefoonnummer
+
+*Inschrijfnummer
+* cursuscode
+uitgezonden naar bedrijf
+vanaf
+tot en met
+		*cursuscode
+		cursusnaam
+		diploma behaald?
+

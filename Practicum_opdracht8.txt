@@ -1,0 +1,22 @@
+* User ID
+User Name
+Message ID
+* Recorded Date
+Subject
+Text
+* Server ID
+server name
+
+
+*Server ID
+server name
+
+* User ID
+User Name
+
+* Recorded Date
+* Message ID
+Text
+
+* Message ID
+Subject

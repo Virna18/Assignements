@@ -1,0 +1,38 @@
+Projectnummer
+Klantnummer
+Klantnaw
+richtprijs
+beginweek
+eindweek
+week
+medewerkernr
+naam
+functie
+jaren ervaring
+uurtarief
+gewerkte uren
+kosten
+totale prijs
+--------------------------------------------
+* Projectnummer
+* Klantnummer	
+richtprijs
+beginweek
+eindweek
+	
+	* Klantnummer
+	Klantnaw
+
+		* Projectnummer
+		* medewerkernr	
+		* gewerkte uren
+		bruto salaris per uur
+		week
+				
+				*medewerkernr
+				functie
+				jaren ervaring
+				uurtarief
+				achternaam
+				voornaam
+

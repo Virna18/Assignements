@@ -1,0 +1,6 @@
+POJO
+plain of java object
+
+Entiteit = tabel
+Attribuut = kolom
+relatie = relatie

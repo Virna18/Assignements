@@ -1,0 +1,121 @@
+Opdracht 1
+2. 
+SELECT employee_id, last_name, job_id, hire_date as startdate 
+FROM hr.employees;
+
+3.
+SELECT DISTINCT job_id
+FROM hr.employees;
+
+5.
+SELECT first_name as `First Name`, last_name as `Last Name`
+FROM hr.employees;
+
+6.
+SELECT DISTINCT country_id
+FROM hr.locations
+WHERE country_id IS NOT NULL; 
+
+Opdracht 2
+1.
+SELECT last_name, salary
+FROM hr.employees
+WHERE salary > 12000;
+
+2.
+SELECT last_name, department_id 
+FROM hr.employees
+WHERE employee_id = 176;
+
+3.
+SELECT last_name, salary 
+FROM hr.employees
+WHERE salary <5000 OR salary >12000;
+
+4.
+SELECT last_name, job_id, hire_date
+From hr.employees
+WHERE (last_name = 'Taylor' OR last_name = 'Matos') 
+ORDER BY hire_date ASC; 
+
+5.
+SELECT last_name, department_id 
+FROM hr.employees
+WHERE (department_id = 20 OR department_id = 50)
+ORDER BY last_name ASC;
+
+6.
+SELECT last_name as Employee, department_id, salary as `Monthly Salary` 
+FROM hr.employees
+WHERE (department_id = 20 OR department_id = 50) AND salary BETWEEN 5000 AND 12000;
+
+7.
+SELECT last_name, hire_date 
+FROM hr.employees
+WHERE year(hire_date) = 2010;
+
+8.
+SELECT last_name, job_id 
+FROM hr.employees
+WHERE manager_id is NULL;
+
+9.
+SELECT last_name, salary, commission_pct
+FROM hr.employees
+WHERE commission_pct is NOT NULL
+ORDER BY salary DESC, commission_pct DESC;
+
+10.
+SELECT last_name
+FROM hr.employees
+WHERE last_name like '__a%';
+
+11.
+SELECT last_name
+FROM hr.employees
+WHERE last_name like '%a%' AND last_name like '%e%';
+
+12.
+SELECT last_name, job_id, salary
+FROM hr.employees
+WHERE (job_id = 'SA_REP' OR job_id = 'ST_CLERK') AND salary NOT IN (2500, 3500, 7000)
+
+13.
+SELECT first_name, last_name, department_id
+FROM hr.employees
+WHERE department_id IN (30, 100)
+ORDER BY department_id ASC, last_name ASC;
+
+14.
+SELECT last_name
+FROM hr.employees
+WHERE last_name like '______';
+
+15.
+SELECT last_name, hire_date
+FROM hr.employees
+WHERE month(hire_date) = 1;
+
+16.
+SELECT first_name, last_name, salary
+FROM hr.employees
+WHERE salary <7000 OR salary >10000
+ORDER BY department_id DESC, last_name DESC;
+
+17.
+SELECT last_name, salary, hire_date
+FROM hr.employees
+WHERE year(hire_date) < 2012
+ORDER BY salary;
+
+18.
+SELECT department_id, department_name, manager_id, location_id 
+FROM hr.departments
+ORDER BY department_name ASC
+LIMIT 5;
+
+19.
+SELECT *
+FROM hr.locations
+ORDER BY street_address DESC
+LIMIT 5, 5;
